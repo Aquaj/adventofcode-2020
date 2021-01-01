@@ -39,7 +39,7 @@ each day at publishing time.
 | Day  | Part One | Part Two | Solutions
 |---|:---:|:---:|:---:|
 | ✔ [Day 1: Report Repair](https://adventofcode.com/2020/day/1)| 🌟 | 🌟 |[Solution](day1.rb)
-| ✔ [Day 2: Password Philosophy](https://adventofcode.com/2020/day/2)| 🌟 | 🌟 |[Solution]((day2.rb)
+| ✔ [Day 2: Password Philosophy](https://adventofcode.com/2020/day/2)| 🌟 | 🌟 |[Solution](day2.rb)
 | ✔ [Day 3: Toboggan Trajectory](https://adventofcode.com/2020/day/3)| 🌟 | 🌟 |[Solution](day3.rb)
 | ✔ [Day 4: Passport Processing](https://adventofcode.com/2020/day/4)| 🌟 | 🌟 |[Solution](day4.rb)
 | ✔ [Day 5: Binary Boarding](https://adventofcode.com/2020/day/5)| 🌟 | 🌟 |[Solution](day5.rb)
