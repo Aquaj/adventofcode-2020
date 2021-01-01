@@ -5,7 +5,17 @@ GEM
     dotenv (2.7.6)
     faraday (0.17.3)
       multipart-post (>= 1.2, < 3)
+    ffi (1.14.2)
+    filigree (0.4.1)
+    lazy_priority_queue (0.1.1)
     multipart-post (2.1.1)
+    rgl (0.5.6)
+      lazy_priority_queue (~> 0.1.0)
+      stream (~> 0.5.2)
+    rltk (3.0.1)
+      ffi (>= 1.0.0)
+      filigree (>= 0.2.0)
+    stream (0.5.2)
 
 PLATFORMS
   ruby
@@ -14,6 +24,8 @@ DEPENDENCIES
   byebug
   dotenv
   faraday
+  rgl
+  rltk
 
 BUNDLED WITH
    2.1.2
