@@ -1,8 +1,9 @@
 # advent-of-code-2020
 Advent of Code 2020 🎄 Ruby Solutions by `@Aquaj`
 
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 Readme based on [Adrienne Tacke's AoC solutions repository](https://github.com/adriennetacke/advent-of-code-2020).
+
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## What is Advent of Code?
 [Advent of Code](http://adventofcode.com) is an online event created by [Eric Wastl](https://twitter.com/ericwastl).
@@ -33,35 +34,35 @@ with other BICODE competitors.
 Days 1 through 11 included were done in one sitting during the night from the 10th to the 11th, other puzzles were done
 each day at publishing time.
 
-## Progress
+## Puzzles
 
-| Day  | Part One | Part Two |
-|---|:---:|:---:|
-| ✔ [Day 1: Report Repair](day1.rb)| 🌟 | 🌟 |
-| ✔ [Day 2: Password Philosophy](day2.rb)| 🌟 | 🌟 |
-| ✔ [Day 3: Toboggan Trajectory](day3.rb)| 🌟 | 🌟 |
-| ✔ [Day 4: Passport Processing](day4.rb)| 🌟 | 🌟 |
-| ✔ [Day 5: Binary Boarding](day5.rb)| 🌟 | 🌟 |
-| ✔ [Day 6: Custom Customs](day6.rb)| 🌟 | 🌟 |
-| ✔ [Day 7: Handy Haversacks](day7.rb)| 🌟 | 🌟 |
-| ✔ [Day 8: Handheld Halting](day8.rb)| 🌟 | 🌟 |
-| ✔ [Day 9: Encoding Error](day9.rb)| 🌟 | 🌟 |
-| ✔ [Day 10: Adapter Array](day10.rb)| 🌟 | 🌟 |
-| ✔ [Day 11: Seating System](day11.rb)| 🌟 | 🌟 |
-| ✔ [Day 12: Rain Risk](day12.rb)| 🌟 | 🌟 |
-| ✔ [Day 13: Shuttle Search](day13.rb)| 🌟 | 🌟 |
-| ✔ [Day 14: Docking Data](day14.rb)| 🌟 | 🌟 |
-| ✔ [Day 15: Rambunctious Recitation](day15.rb)| 🌟 | 🌟 |
-| ✔ [Day 16: Ticket Translation](day16.rb)| 🌟 | 🌟 |
-| ✔ [Day 17: Conway Cubes](day17.rb)| 🌟 | 🌟 |
-| ✔ [Day 18: Operation Order](day18.rb)| 🌟 | 🌟 |
-| ✔ [Day 19: Monster Messages](day19.rb)| 🌟 | 🌟 |
-| ✔ [Day 20: Jurassic Jigsaw](day20.rb)| 🌟 | 🌟 |
-| ✔ [Day 21: Allergen Assessment](day21.rb)| 🌟 | 🌟 |
-| ✔ [Day 22: Crab Combat](day22.rb)| 🌟 | 🌟 |
-| ✔ [Day 23: Crab Cups](day23.rb)| 🌟 | 🌟 |
-| ✔ [Day 24: Lobby Layout](day24.rb)| 🌟 | 🌟 |
-| ✔ [Day 25: Combo Breaker](day25.rb)| 🌟 | 🌟 |
+| Day  | Part One | Part Two | Solutions
+|---|:---:|:---:|:---:|
+| ✔ [Day 1: Report Repair](https://adventofcode.com/2020/day/1)| 🌟 | 🌟 |[Solution](day1.rb)
+| ✔ [Day 2: Password Philosophy](https://adventofcode.com/2020/day/2)| 🌟 | 🌟 |[Solution]((day2.rb)
+| ✔ [Day 3: Toboggan Trajectory](https://adventofcode.com/2020/day/3)| 🌟 | 🌟 |[Solution](day3.rb)
+| ✔ [Day 4: Passport Processing](https://adventofcode.com/2020/day/4)| 🌟 | 🌟 |[Solution](day4.rb)
+| ✔ [Day 5: Binary Boarding](https://adventofcode.com/2020/day/5)| 🌟 | 🌟 |[Solution](day5.rb)
+| ✔ [Day 6: Custom Customs](https://adventofcode.com/2020/day/6)| 🌟 | 🌟 |[Solution](day6.rb)
+| ✔ [Day 7: Handy Haversacks](https://adventofcode.com/2020/day/7)| 🌟 | 🌟 |[Solution](day7.rb)
+| ✔ [Day 8: Handheld Halting](https://adventofcode.com/2020/day/8)| 🌟 | 🌟 |[Solution](day8.rb)
+| ✔ [Day 9: Encoding Error](https://adventofcode.com/2020/day/9)| 🌟 | 🌟 |[Solution](day9.rb)
+| ✔ [Day 10: Adapter Array](https://adventofcode.com/2020/day/10)| 🌟 | 🌟 |[Solution](day10.rb)
+| ✔ [Day 11: Seating System](https://adventofcode.com/2020/day/11)| 🌟 | 🌟 |[Solution](day11.rb)
+| ✔ [Day 12: Rain Risk](https://adventofcode.com/2020/day/12)| 🌟 | 🌟 |[Solution](day12.rb)
+| ✔ [Day 13: Shuttle Search](https://adventofcode.com/2020/day/13)| 🌟 | 🌟 |[Solution](day13.rb)
+| ✔ [Day 14: Docking Data](https://adventofcode.com/2020/day/14)| 🌟 | 🌟 |[Solution](day14.rb)
+| ✔ [Day 15: Rambunctious Recitation](https://adventofcode.com/2020/day/15)| 🌟 | 🌟 |[Solution](day15.rb)
+| ✔ [Day 16: Ticket Translation](https://adventofcode.com/2020/day/16)| 🌟 | 🌟 |[Solution](day16.rb)
+| ✔ [Day 17: Conway Cubes](https://adventofcode.com/2020/day/17)| 🌟 | 🌟 |[Solution](day17.rb)
+| ✔ [Day 18: Operation Order](https://adventofcode.com/2020/day/18)| 🌟 | 🌟 |[Solution](day18.rb)
+| ✔ [Day 19: Monster Messages](https://adventofcode.com/2020/day/19)| 🌟 | 🌟 |[Solution](day19.rb)
+| ✔ [Day 20: Jurassic Jigsaw](https://adventofcode.com/2020/day/20)| 🌟 | 🌟 |[Solution](day20.rb)
+| ✔ [Day 21: Allergen Assessment](https://adventofcode.com/2020/day/21)| 🌟 | 🌟 |[Solution](day21.rb)
+| ✔ [Day 22: Crab Combat](https://adventofcode.com/2020/day/22)| 🌟 | 🌟 |[Solution](day22.rb)
+| ✔ [Day 23: Crab Cups](https://adventofcode.com/2020/day/23)| 🌟 | 🌟 |[Solution](day23.rb)
+| ✔ [Day 24: Lobby Layout](https://adventofcode.com/2020/day/24)| 🌟 | 🌟 |[Solution](day24.rb)
+| ✔ [Day 25: Combo Breaker](https://adventofcode.com/2020/day/25)| 🌟 | 🌟 |[Solution](day25.rb)
 
 ## Running the code
 
