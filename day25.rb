@@ -20,10 +20,11 @@ class Day25 < AdventDay
     baby_steps_giant_steps(subject_number, public_key, CRYPT_KEY)
   end
 
+  # Adapted from https://stackoverflow.com/a/37237257/4154690
   def baby_steps_giant_steps(a,b,p,n: nil)
     n = Math.sqrt(p).ceil unless n
 
-    #initialize baby_steps table
+    # Initialize baby steps table
     baby_steps = {}
     baby_step = 1
 
@@ -32,7 +33,7 @@ class Day25 < AdventDay
       baby_step = (baby_step * a) % p
     end
 
-    #now take the giant steps
+    # And now going for giant steps
     giant_stride = a.pow((p-2)*n,p)
     giant_step = b
     (0..n).each do |q|
