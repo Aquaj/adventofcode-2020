@@ -5,4 +5,6 @@ gem 'byebug'
 
 gem 'faraday'
 
-# v Used for specific days v
+# v Used for specific problems v
+gem 'rgl', require: false
+gem 'rltk', require: false
