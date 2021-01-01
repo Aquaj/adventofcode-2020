@@ -56,6 +56,7 @@ puzzle is unlocked when you complete the first. Each puzzle grants one star. Goo
 
 ## Running the code
 
-Each day computes and displays the answers to both of the day questions. To run it type `ruby day<number>.rb`.
+Each day computes and displays the answers to both of the day questions and their computing time in ms. To run it type `ruby day<number>.rb`.
+
 If the session cookie value is provided through the SESSION env variable (dotenv is available to provide it) — it will
-fetch the input from the website and store it as a file under the `inputs/` folder.
+fetch the input from the website and store it as a file under the `inputs/` folder on its first run.
