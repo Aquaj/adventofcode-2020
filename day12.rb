@@ -131,7 +131,7 @@ class Day12 < AdventDay
   LEFT = 'L'
   FORWARD = 'F'
 
-  def main
+  def first_part
     @ship = BasicShip.new
     instructions = input.dup
     instructions.each do |instruction, arg|
@@ -148,7 +148,7 @@ class Day12 < AdventDay
     @ship.manhattan_distance
   end
 
-  def alternate
+  def second_part
     @ship = GuidedShip.new
     instructions = input.dup
     instructions.each do |instruction, arg|

@@ -9,7 +9,7 @@ class Day8 < AdventDay
     reset_memory!
   end
 
-  def main
+  def first_part
     code = input
     loop do
       return @accumulator if @instructions_ran.include? @program_counter
@@ -18,7 +18,7 @@ class Day8 < AdventDay
   end
 
   # Not a fan of this bruteforcing but it runs fast enough
-  def alternate
+  def second_part
     code = input
     @flips_to_try = code.each_with_index.select{ |(op,arg),i| op == NOOP || op == JUMP }.map(&:last)
     @flips_to_try.each do |flip_to_try|
@@ -68,5 +68,4 @@ class Day8 < AdventDay
   end
 end
 
-p Day8.new.main
-p Day8.new.alternate
+Day8.solve

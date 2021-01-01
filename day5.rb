@@ -1,17 +1,21 @@
 require_relative 'common'
 
 class Day5 < AdventDay
-  def main
-    input.map { |seat| seat[:id] }.max
+  def first_part
+    highest_seat_number
   end
 
-  def alternate
-    free_seats = (0..main).to_a - input.map { |seat| seat[:id] }
+  def second_part
+    free_seats = (0..highest_seat_number).to_a - input.map { |seat| seat[:id] }
     # We know we have neighboring seats
     free_seats.find { |seat_id| !free_seats.include?(seat_id - 1) && !free_seats.include?(seat_id + 1)}
   end
 
   private
+
+  def highest_seat_number
+    input.map { |seat| seat[:id] }.max
+  end
 
   def convert_data(data)
     super.map do |binary_place|
@@ -24,5 +28,4 @@ class Day5 < AdventDay
   end
 end
 
-p Day5.new.main
-p Day5.new.alternate
+Day5.solve

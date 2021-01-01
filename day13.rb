@@ -1,7 +1,7 @@
 require_relative 'common'
 
 class Day13 < AdventDay
-  def main
+  def first_part
     arrival_time, bus_frequencies = input
 
     next_arrivals = bus_frequencies.compact.map do |freq|
@@ -14,7 +14,7 @@ class Day13 < AdventDay
   end
 
   # sync(period[k] + offset[k]) === sync(offset[k] + period[k]) === LCM with -offset
-  def alternate
+  def second_part
     _arrival_time, bus_ids = input
     bus_ids.each_with_index.reduce do |(common_frequency, common_offset), (frequency, offset)|
       next [frequency, offset] if common_frequency.nil?

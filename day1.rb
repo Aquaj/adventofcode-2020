@@ -1,12 +1,12 @@
 require_relative 'common'
 
 class Day1 < AdventDay
-  def main
+  def first_part
     pair = input.combination(2).find { |a,b| a+b == 2020 }
     pair.reduce(&:*)
   end
 
-  def alternate
+  def second_part
     triplet = input.combination(3).find { |a,b,c| a+b+c == 2020 }
     triplet.reduce(&:*)
   end

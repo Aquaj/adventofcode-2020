@@ -48,7 +48,7 @@ end
 
 class Day7 < AdventDay
   MAIN_BAG_TYPE = 'shiny gold bag'.freeze
-  def main
+  def first_part
     rules_graph(input).
       reverse. # To get graph of being-contained-by
       dijkstra_shortest_paths(MAIN_BAG_TYPE). # Compute which bags are reachable
@@ -56,7 +56,7 @@ class Day7 < AdventDay
       count { |_dst, path| path != nil } # Count reachable ones
   end
 
-  def alternate
+  def second_part
     graph = rules_graph(input)
     subtree_bag_cost(MAIN_BAG_TYPE, graph) - 1 # initial bag already shouldn't be counted in result
   end
@@ -95,5 +95,4 @@ class Day7 < AdventDay
   end
 end
 
-p Day7.new.main
-p Day7.new.alternate
+Day7.solve

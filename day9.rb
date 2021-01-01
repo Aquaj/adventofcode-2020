@@ -3,13 +3,13 @@ require_relative 'common'
 class Day9 < AdventDay
   CIPHER_SIZE = 25
 
-  def main
+  def first_part
     xmas_stream.find do |(current_cipher, next_value)|
       current_cipher.combination(2).none? { |(a,b)| a+b == next_value }
     end.last
   end
 
-  def alternate
+  def second_part
     current_stream, weakness = xmas_stream(full: true).find do |(current_cipher, next_value)|
       truncated_cipher = current_cipher[-CIPHER_SIZE...]
       truncated_cipher.combination(2).none? { |(a,b)| a+b == next_value }
@@ -42,5 +42,4 @@ class Day9 < AdventDay
   end
 end
 
-p Day9.new.main
-p Day9.new.alternate
+Day9.solve

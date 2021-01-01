@@ -3,14 +3,14 @@ require_relative 'common'
 class Day25 < AdventDay
   CRYPT_KEY = 20201227
 
-  def main
+  def first_part
     card_public_key, door_public_key = *input.dup
     _card_loop_size = break_key(card_public_key)
     door_loop_size = break_key(door_public_key)
     card_public_key.pow(door_loop_size, CRYPT_KEY)
   end
 
-  def alternate
+  def second_part
     'Nothing to do — 🌟🎉'
   end
 

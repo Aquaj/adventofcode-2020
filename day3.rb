@@ -11,11 +11,11 @@ class Day3 < AdventDay
   ].freeze
   MAIN_TRAJECTORY = TRAJECTORIES[1]
 
-  def main
+  def first_part
     collisions_for(MAIN_TRAJECTORY)
   end
 
-  def alternate
+  def second_part
     TRAJECTORIES.map { |trajectory| collisions_for(trajectory) }.reduce(:*)
   end
 
@@ -31,5 +31,4 @@ class Day3 < AdventDay
   end
 end
 
-p Day3.new.main
-p Day3.new.alternate
+Day3.solve

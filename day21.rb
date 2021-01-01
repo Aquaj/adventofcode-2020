@@ -1,7 +1,7 @@
 require_relative 'common'
 
 class Day21 < AdventDay
-  def main
+  def first_part
     list = input.dup
     all_ingredients = Set.new(list.keys.flatten).freeze
 
@@ -12,7 +12,7 @@ class Day21 < AdventDay
     non_allergens.sum { |non_allergen| list.sum { |ingredients,_| ingredients.count(non_allergen) } }
   end
 
-  def alternate
+  def second_part
     list = input.dup
     risks = allergen_risks_from(list)
     until risks.all? { |_, ingredients| ingredients.length == 1 }

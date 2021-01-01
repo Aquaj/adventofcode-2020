@@ -55,7 +55,7 @@ class CupCircle
 end
 
 class Day23 < AdventDay
-  def main
+  def first_part
     cups = input
     cups.finalize!
 
@@ -64,7 +64,7 @@ class Day23 < AdventDay
     circle_start.tail.take(cups.length - 1).join
   end
 
-  def alternate
+  def second_part
     initial_cups = input
 
     missing = reverse((initial_cups.length+1)..1_000_000)

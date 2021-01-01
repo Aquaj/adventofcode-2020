@@ -61,7 +61,7 @@ class Day14 < AdventDay
   MEMSET = /mem\[(\d+)\]/
   MASK = /mask/
 
-  def main
+  def first_part
     @memory_accessor = MemoryValMasker.new
     instructions = input.dup
     instructions.each do |op, arg|
@@ -70,7 +70,7 @@ class Day14 < AdventDay
     @memory_accessor.memory.values.sum
   end
 
-  def alternate
+  def second_part
     @memory_accessor = MemoryAdressDecoder.new
     instructions = input.dup
     instructions.each do |op, arg|

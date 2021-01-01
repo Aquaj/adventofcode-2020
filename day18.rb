@@ -64,13 +64,13 @@ class Calculator
 end
 
 class Day18 < AdventDay
-  def main
+  def first_part
     @calculator = Calculator.new
     exprs = input
     exprs.map { |exp| @calculator.compute(exp) }.sum
   end
 
-  def alternate
+  def second_part
     @calculator = Calculator.new(mode: :advanced)
     exprs = input
     exprs.map { |exp| @calculator.compute(exp) }.sum

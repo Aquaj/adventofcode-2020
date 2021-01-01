@@ -3,7 +3,7 @@ require_relative 'common'
 class Day10 < AdventDay
   ALLOWED_INTERVAL = 3
 
-  def main
+  def first_part
     adapters = (input + [0]).sort
     adapters.
       each_cons(2).
@@ -13,7 +13,7 @@ class Day10 < AdventDay
   end
 
   # That one was hard to crack without trying to bruteforce it.
-  def alternate
+  def second_part
     adapters = input.sort
 
     source = 0

@@ -121,12 +121,12 @@ class Dim4ConwayGrid < ConwayGrid
 end
 
 class Day17 < AdventDay
-  def main
+  def first_part
     grid = Dim3ConwayGrid.from_layers([input])
     Enumerator.produce(grid, &:compute_next).nth(21).actives.count
   end
 
-  def alternate
+  def second_part
     grid = Dim4ConwayGrid.from_layers([[input]])
     Enumerator.produce(grid, &:compute_next).nth(7).actives.count
   end

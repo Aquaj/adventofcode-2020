@@ -1,13 +1,13 @@
 require_relative 'common'
 
 class Day16 < AdventDay
-  def main
+  def first_part
     set_instance_vars_from(input)
 
     @other_tickets.sum { |ticket_vals| ticket_vals.select { |val| matches_any_rule?(val) }.sum }
   end
 
-  def alternate
+  def second_part
     set_instance_vars_from(input)
 
     valid_tickets = @other_tickets.reject { |ticket_vals| ticket_vals.any? { |val| matches_any_rule?(val) } }

@@ -1,13 +1,13 @@
 require_relative 'common'
 
 class Day22 < AdventDay
-  def main
+  def first_part
     game_result = play_game(combat_game_with(input.dup))
     _loser_deck, winner_deck = game_result.sort
     score(winner_deck)
   end
 
-  def alternate
+  def second_part
     game_result = play_game(recursive_combat_with(input.dup))
     winner, final_decks = game_result
     winner_deck = final_decks[winner]

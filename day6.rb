@@ -1,11 +1,11 @@
 require_relative 'common'
 
 class Day6 < AdventDay
-  def main
+  def first_part
     input.map { |group| group.join.chars.uniq.length }.reduce(&:+)
   end
 
-  def alternate
+  def second_part
     input.map do |group|
       members_count = group.length
       group.join.chars.tally.count { |_question, answers_count| answers_count == members_count }
@@ -19,5 +19,4 @@ class Day6 < AdventDay
   end
 end
 
-p Day6.new.main
-p Day6.new.alternate
+Day6.solve

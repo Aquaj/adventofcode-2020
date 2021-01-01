@@ -3,12 +3,12 @@ require_relative 'common'
 require 'benchmark'
 
 class Day15 < AdventDay
-  def main
+  def first_part
     numbers = input.dup
     naive_enumerator(numbers).take(2020).last
   end
 
-  def alternate
+  def second_part
     numbers = input.dup
     Benchmark.measure { efficient_enumerator(numbers).nth(30_000_000) }
   end

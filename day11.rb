@@ -76,7 +76,7 @@ class LoungeWithSight < Lounge
 end
 
 class Day11 < AdventDay
-  def main
+  def first_part
     lounge = NaiveLounge.new(input)
     loop do
       prev = lounge
@@ -86,7 +86,7 @@ class Day11 < AdventDay
     lounge.seats.count(Lounge::OCCUPIED_SEAT)
   end
 
-  def alternate
+  def second_part
     lounge = LoungeWithSight.new(input)
     loop do
       prev = lounge

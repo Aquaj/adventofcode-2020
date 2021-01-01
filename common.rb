@@ -10,12 +10,12 @@ class AdventDay
   SESSION = ENV['SESSION'] || ''
 
   def self.solve
-    puts " - #{(Benchmark.measure { print self.new.main.inspect }.real * 1000).round(3)}ms"
-    puts " - #{(Benchmark.measure { print self.new.alternate.inspect }.real * 1000).round(3)}ms"
+    puts " - #{(Benchmark.measure { print self.new.first_part.inspect  }.real * 1000).round(3)}ms"
+    puts " - #{(Benchmark.measure { print self.new.second_part.inspect }.real * 1000).round(3)}ms"
   end
 
-  def main; end
-  def alternate; end
+  def first_part; end
+  def second_part; end
 
   def convert_data(data)
     data.split("\n")

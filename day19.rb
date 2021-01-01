@@ -54,13 +54,13 @@ class Day19 < AdventDay
     rule11: "rule42 rule31 | rule42 rule11 rule31",
   }.freeze
 
-  def main
+  def first_part
     data = input.dup
     message_parser = MessageParser.new(data[:rules])
     data[:messages].count { |mess| message_parser.message_valid?(mess) }
   end
 
-  def alternate
+  def second_part
     data = input.dup
     message_parser = MessageParser.new(data[:rules].merge(RULES_OVERRIDE))
     data[:messages].count { |mess| message_parser.message_valid?(mess) }

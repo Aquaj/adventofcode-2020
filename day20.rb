@@ -149,14 +149,14 @@ class Day20 < AdventDay
    #  #  #  #  #  #
   MONSTER
 
-  def main
+  def first_part
     tiles = input.dup
     figure_out_corners(tiles).
       map { |tile, _| tile.number }.
       reduce(&:*)
   end
 
-  def alternate
+  def second_part
     solved_grid = solve(input.dup)
     picture = build_picture_from_grid(solved_grid)
     number_of_monsters = count_monsters(picture)

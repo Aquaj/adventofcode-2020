@@ -1,14 +1,14 @@
 require_relative 'common'
 
 class Day2 < AdventDay
-  def main
+  def first_part
     input.count do |policy_min, policy_max, policy_char, password|
       count = password.chars.count(policy_char)
       count >= policy_min && count <= policy_max
     end
   end
 
-  def alternate
+  def second_part
     input.count do |policy_index_a, policy_index_b, policy_char, password|
       [password[policy_index_a-1], password[policy_index_b-1]].count(policy_char) == 1
     end

@@ -16,12 +16,12 @@ class Day24 < AdventDay
     NE => [1, 1],
   }.freeze
 
-  def main
+  def first_part
     instructions = input.dup
     setup_tiles(instructions).count
   end
 
-  def alternate
+  def second_part
     tiles = setup_tiles(input.dup)
     Enumerator.new do |yielder|
       loop do

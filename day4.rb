@@ -27,12 +27,12 @@ class Day4 < AdventDay
     cid
   ].freeze
 
-  def main
+  def first_part
     passports = input.dup
     passports.count { |passport| VALID_PROPERTIES - passport.keys - OPTIONAL_PROPERTIES == [] }
   end
 
-  def alternate
+  def second_part
     passports = input.dup
     passports.count { |passport| passport_is_valid?(passport) }
   end
@@ -55,5 +55,4 @@ class Day4 < AdventDay
   end
 end
 
-p Day4.new.main
-p Day4.new.alternate
+Day4.solve
