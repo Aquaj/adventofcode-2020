@@ -1,8 +1,6 @@
 # advent-of-code-2020
 Advent of Code 2020 🎄 Ruby Solutions by `@Aquaj`
 
-**Done during Le Wagon Bordeaux's [BICODE challenge](https://www.bicode.camp)**
-
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 Readme based on [Adrienne Tacke's AoC solutions repository](https://github.com/adriennetacke/advent-of-code-2020).
 
@@ -23,6 +21,17 @@ To save your vacation, you need to get all fifty stars by December 25th.
 
 Collect stars by solving puzzles. Two puzzles will be made available on each day in the Advent calendar; the second
 puzzle is unlocked when you complete the first. Each puzzle grants one star. Good luck!
+
+## Context
+
+**Done during Le Wagon Bordeaux's [BICODE challenge](https://www.bicode.camp)**
+
+**These were not written as example of clean or efficient code** but are simply my attempts at finding the answers to
+each day's puzzle as quickly as possible. Performance logging was added simply as a fun way to compare implementations
+with other BICODE competitors.
+
+Days 1 through 11 included were done in one sitting during the night from the 10th to the 11th, other puzzles were done
+each day at publishing time.
 
 ## Progress
 
