@@ -4,13 +4,10 @@ class Day13 < AdventDay
   def first_part
     arrival_time, bus_frequencies = input
 
-    next_arrivals = bus_frequencies.compact.map do |freq|
-      next_arrival = (arrival_time / freq.to_f).ceil * freq
-      [freq, next_arrival]
-    end
-    # ID == freq
-    earliest_bus_id, earliest_departure = next_arrivals.min_by(&:last)
-    (earliest_departure - arrival_time) * earliest_bus_id
+    bus_frequencies.compact.map do |freq|
+      wait_time = freq - (arrival_time % freq)
+      [freq, wait_time]
+    end.min_by(&:last).reduce(&:*)
   end
 
   # sync(period[k] + offset[k]) === sync(offset[k] + period[k]) === LCM with -offset
@@ -20,7 +17,7 @@ class Day13 < AdventDay
       next [frequency, offset] if common_frequency.nil?
       next [common_frequency, common_offset] if frequency.nil?
 
-      #  offset bc we want them to depart one AFTER the other and not before — offset 0 is first to leave
+      # -offset bc we want them to depart one AFTER the other and not before — offset 0 is first to leave
       first_common(common_frequency, common_offset, frequency, -offset)
     end.last
   end
