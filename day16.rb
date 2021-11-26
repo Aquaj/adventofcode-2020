@@ -4,13 +4,13 @@ class Day16 < AdventDay
   def first_part
     set_instance_vars_from(input)
 
-    @other_tickets.sum { |ticket_vals| ticket_vals.select { |val| matches_any_rule?(val) }.sum }
+    @other_tickets.sum { |ticket_vals| ticket_vals.select { |val| matches_no_rule?(val) }.sum }
   end
 
   def second_part
     set_instance_vars_from(input)
 
-    valid_tickets = @other_tickets.reject { |ticket_vals| ticket_vals.any? { |val| matches_any_rule?(val) } }
+    valid_tickets = @other_tickets.reject { |ticket_vals| ticket_vals.any? { |val| matches_no_rule?(val) } }
 
     field_order = field_positions_for(valid_tickets)
 
@@ -20,7 +20,7 @@ class Day16 < AdventDay
 
   private
 
-  def matches_any_rule?(value)
+  def matches_no_rule?(value)
     @rules.none? { |_field, rule| matches_rule?(rule, value) }
   end
 
