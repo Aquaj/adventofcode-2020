@@ -1,7 +1,5 @@
 require_relative 'common'
 
-require 'benchmark'
-
 class Day15 < AdventDay
   def first_part
     numbers = input.dup
@@ -10,7 +8,7 @@ class Day15 < AdventDay
 
   def second_part
     numbers = input.dup
-    Benchmark.measure { efficient_enumerator(numbers).nth(30_000_000) }
+    efficient_enumerator(numbers).nth(30_000_000)
   end
 
   private
