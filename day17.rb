@@ -123,7 +123,7 @@ end
 class Day17 < AdventDay
   def first_part
     grid = Dim3ConwayGrid.from_layers([input])
-    Enumerator.produce(grid, &:compute_next).nth(21).actives.count
+    Enumerator.produce(grid, &:compute_next).nth(7).actives.count
   end
 
   def second_part
